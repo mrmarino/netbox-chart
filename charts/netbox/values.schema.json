@@ -11,11 +11,7 @@
           "title": "Specify a imagePullPolicy",
           "description": "Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'",
           "type": "string",
-          "enum": [
-            "IfNotPresent",
-            "Always",
-            "Never"
-          ]
+          "enum": ["IfNotPresent", "Always", "Never"]
         },
         "pullSecrets": {
           "title": "Optionally specify an array of imagePullSecrets",
@@ -35,10 +31,7 @@
           "type": "string"
         }
       },
-      "required": [
-        "repository",
-        "pullPolicy"
-      ]
+      "required": ["repository", "pullPolicy"]
     },
     "probe": {
       "type": "object",
